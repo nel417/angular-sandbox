@@ -1,0 +1,12 @@
+
+<div class="wrapper-flex">
+    <div class="container" *ngFor="let card of cards">
+      <div class='banner-img'></div>
+      <img src='{{card.profileImage}}' alt='profile image' class="profile-img">
+      <h1 class="name">{{card.name}}</h1>
+      <p class="description">{{card.mainText}}</p>
+      <button class='btn'>{{card.btn}}</button>
+	</div>
+  </div>
+
+ 
