@@ -31,7 +31,8 @@ export class CardComponent implements OnInit {
 			 mainText: 'I love to sit at the coffee shop and write code as well as lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem',
 			 btn: 'follow',
 			
-		},
+		 },
+		
 	]
 
   constructor() { }
