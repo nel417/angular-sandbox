@@ -1,0 +1,20 @@
+<div class="play-counter">
+	<p>Youve clicked <span (click)="countClick()">This </span>{{ clickCounter }} times</p>
+
+</div>
+
+<div class="play-container">
+	<input type="text" [(ngModel)]="name">
+	<div class="break"> </div>
+	<p class="bold">you said:&nbsp; </p>   {{name}}
+</div>
+
+<div class="play-container">
+<ng-template [ngIf]="clickCounter <= 4" [ngIfElse]="none">
+<p>click counter is less than 4</p>
+</ng-template>
+
+<ng-template #none>
+<p>higher than 4</p>
+</ng-template>
+</div>
